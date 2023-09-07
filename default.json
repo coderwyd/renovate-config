@@ -30,7 +30,7 @@
         "semanticCommitType": "chore"
       },
       {
-        "matchDepTypes": ["dependencies", "peerDependencies"],
+        "matchDepTypes": ["dependencies"],
         "semanticCommitType": "fix"
       },
       {
@@ -42,6 +42,10 @@
       {
         "description": "disable package.json > engines update",
         "matchDepTypes": ["engines"],
+        "enabled": false
+      },
+      {
+        "depTypeList": ["peerDependencies"],
         "enabled": false
       },
       {

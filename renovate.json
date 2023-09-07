@@ -1,5 +1,5 @@
 {
-  "extends": ["local>@coderwyd/renovate-config"],
+  "extends": ["local>coderwyd/renovate-config"],
   "npm": {
     "schedule": ["after 7am before 9am"]
   },
