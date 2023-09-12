@@ -43,9 +43,10 @@
     },
     {
       "description": "Automerge non-major updates",
-      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
-      "platformAutomerge": true
+      "platformAutomerge": true,
+      "automergeStrategy": "squash"
     }
   ]
 }
