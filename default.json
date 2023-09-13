@@ -3,6 +3,8 @@
   "extends": [
     "group:allNonMajor",
     "config:base",
+    ":prNotPending",
+    ":prConcurrentLimit20",
     ":semanticCommits",
     ":rebaseStalePrs",
     "docker:enableMajor",
@@ -12,8 +14,6 @@
   "rangeStrategy": "bump",
   "platformCommit": true,
   "platformAutomerge": true,
-  "prHourlyLimit": 0,
-  "prConcurrentLimit": 30,
   "postUpdateOptions": ["npmDedupe", "pnpmDedupe", "yarnDedupeHighest"],
   "schedule": ["after 9pm", "before 9am"],
   "lockFileMaintenance": {
