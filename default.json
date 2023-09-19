@@ -1,14 +1,17 @@
 {
   "description": "Default preset for use with donny's repos",
   "extends": [
-    "group:allNonMajor",
-    "config:base",
     ":prNotPending",
     ":prConcurrentLimit20",
     ":semanticCommits",
-    ":rebaseStalePrs",
     "docker:enableMajor",
-    "npm:unpublishSafe"
+    "npm:unpublishSafe",
+    "packages:eslint",
+    "helpers:disableTypesNodeMajor",
+    ":separatePatchReleases",
+    ":automergePatch",
+    ":noUnscheduledUpdates",
+    "group:monorepos"
   ],
   "labels": ["dependencies"],
   "rangeStrategy": "bump",
@@ -42,11 +45,9 @@
       "matchPackageNames": ["@coderwyd/eslint-config"]
     },
     {
-      "description": "Automerge non-major updates",
+      "description": "automerge minor updates in devDeps",
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true,
-      "platformAutomerge": true,
-      "automergeStrategy": "squash"
+      "automerge": true
     }
   ]
 }
