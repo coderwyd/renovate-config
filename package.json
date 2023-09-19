@@ -2,8 +2,10 @@
   "name": "@coderwyd/renovate-config",
   "description": "Donny preset for Renovate",
   "author": "Donny Wang <donny526@outlook.com> (https://github.com/coderwyd/)",
-  "files": ["default.json"],
+  "files": [
+    "default.json"
+  ],
   "devDependencies": {
-    "renovate": "latest"
+    "renovate": "^36.97.0"
   }
 }
