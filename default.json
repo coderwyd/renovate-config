@@ -16,7 +16,6 @@
   "labels": ["dependencies"],
   "rangeStrategy": "bump",
   "platformCommit": true,
-  "platformAutomerge": true,
   "postUpdateOptions": ["npmDedupe", "pnpmDedupe", "yarnDedupeHighest"],
   "schedule": ["after 9pm", "before 9am"],
   "lockFileMaintenance": {
@@ -26,8 +25,7 @@
   },
   "vulnerabilityAlerts": {
     "labels": ["security"],
-    "automerge": true,
-    "platformAutomerge": true
+    "automerge": true
   },
   "packageRules": [
     {
@@ -46,7 +44,7 @@
     },
     {
       "description": "automerge minor updates in devDeps",
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": ["minor"],
       "automerge": true
     }
   ]
