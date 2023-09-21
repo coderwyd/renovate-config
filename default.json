@@ -23,10 +23,6 @@
     "automerge": true,
     "extends": ["schedule:weekly"]
   },
-  "vulnerabilityAlerts": {
-    "labels": ["security"],
-    "automerge": true
-  },
   "packageRules": [
     {
       "matchDepTypes": ["peerDependencies"],
