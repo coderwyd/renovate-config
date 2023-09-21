@@ -41,6 +41,22 @@
       "description": "automerge minor updates in devDeps",
       "matchUpdateTypes": ["minor"],
       "automerge": true
+    },
+    {
+      "matchManagers": ["npm"],
+      "addLabels": ["javascript"]
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "addLabels": ["github-actions"]
+    },
+    {
+      "extends": ["packages:react"],
+      "groupName": "react"
+    },
+    {
+      "extends": ["packages:react"],
+      "groupName": "react"
     }
   ]
 }
