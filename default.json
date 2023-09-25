@@ -4,7 +4,7 @@
     ":timezone(Asia/Shanghai)",
     ":noUnscheduledUpdates",
     ":prNotPending",
-    ":prConcurrentLimit30",
+    ":prConcurrentLimit20",
     "packages:eslint",
     "group:monorepos"
   ],
