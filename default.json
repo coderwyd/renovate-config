@@ -32,7 +32,7 @@
         "automerge": true
       },
       {
-        "description": "disable package.json > engines update",
+        "description": ["disable package.json > engines update"],
         "matchDepTypes": ["engines"],
         "enabled": false
       },
@@ -47,6 +47,15 @@
         "schedule": "at any time",
         "minimumReleaseAge": "0",
         "matchPackageNames": ["@coderwyd/eslint-config"]
+      },
+      {
+        "groupName": "ESLint group",
+        "matchPackageNames": [
+          "eslint",
+          "@eslint/js",
+          "@types/eslint",
+          "@types/eslint__js"
+        ]
       },
       {
         "groupName": "Tools & Commanders",
